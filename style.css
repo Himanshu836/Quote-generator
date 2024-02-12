@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'Caveat', cursive;
+    /* font-family: 'Roboto', sans-serif; */
+}
+body{
+    background-color: #bbc6fa;
+}
+.container
+{
+    width: 600px;
+    height: 50vh;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0,0,0, 0.15);
+}
+.container h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.container h1::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23,124, 229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50px);
+}
+.container blockquote{
+    font-size: 26px;
+    min-height: 50px;
+}
+.container blockquote::before,.container blockquote::after{
+    content: '"';
+}
+.container span{
+    display: block;
+    margin-top: 5px;
+    float: right;
+    position: relative;
+}
+.container span::before{
+    content: '';
+    width: 15px;
+    height: 2px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+.container div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.container button{
+    background: rgb(23, 124, 229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(23, 124, 229);
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.container button img{
+    width: 15px;
+    margin-right: 5px;
+
+}
+.container button:nth-child(2)
+{
+    background: transparent;
+    color: #333;
+}
+
